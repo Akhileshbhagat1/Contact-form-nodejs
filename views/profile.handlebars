@@ -1,0 +1,38 @@
+        <div class="container d-flex justify-content-center">
+            
+            <div class="bg-light col-md-12 mt-5 py-1">
+
+                <div class="float-right mt-3 mr-2">
+                <a class="btn btn-danger btn-sm " href="/logout">Logout</a>
+                </div>
+                <h1 class="text-center">Profile</h1>
+                <div class="d-flex justify-content-center">
+                    
+                    <table class="table table-bordered display" id="example" >
+                        <thead>
+                            <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#userdata }}
+                            <tr>
+                                <td>{{id}}</td>
+                                <td>{{username}}</td>
+                                <td>{{email}}</td>
+                                <td>{{contact}}</td>
+                                <td>{{message}}</td>
+                            </tr>
+                            {{/userdata }}
+                        </tbody>
+
+                    </table>
+                </div>             
+            </div>
+            
+        </div>
+  
